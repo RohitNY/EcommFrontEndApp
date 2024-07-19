@@ -1,0 +1,38 @@
+/**
+* This file is ONLY for extending Animate.css
+* https://github.com/daneden/animate.css
+*/
+
+/* delay 
+  to delay an animation from starting
+  from 100 to 900 ms in increments of 
+  100 milliseconds
+*/
+@for $i from 1 through 9 {
+  .animated.delay-#{$i}00ms {
+    animation-delay: #{$i}00ms;
+  }
+}
+
+/* times 
+  to repeat an animation 2 or more times
+  up to 10. You can also use "infinite" to
+  always loop an animation
+*/
+@for $i from 2 through 10 {
+  .animated.times-#{$i} {
+    animation-iteration-count: #{$i};
+  }
+}
+
+
+/* duration 
+  to repeat an animation 2 or more duration
+  up to 10. You can also use "infinite" to
+  always loop an animation
+*/
+@for $i from 2 through 10 {
+  .animated.duration-#{$i}s {
+    animation-duration: #{$i}s;
+  }
+}

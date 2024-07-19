@@ -1,0 +1,99 @@
+// #################################################################################################
+// E-com Media Query Usage Guide:
+//
+//   sm -  Small  ( <= 599 px )
+//   md -  Medium ( > 600 && < 1079 px )
+//   lg -  Large  ( >= 1080 px )
+//
+//                        600       768          992                    1280
+//               '     '     '     '     '     '     '     '     '     '     '
+//                     '           '           '                 '
+//  sm       <------------^           '                 '
+//  md                    ^------------------------------------^
+//  lg                                                         ^------------------------------->
+//  ################################################################################################
+//  ################################################################################################
+//  ################################################################################################
+@mixin xs {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin sm-only {
+  @media (min-width: 321px) and (max-width: 599px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin md-only {
+  @media (min-width: 600px) and (max-width: 1079px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 1080px) {
+    @content;
+  }
+}
+@mixin lg-only {
+  @media (min-width: 1080px) and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+@mixin xl-only {
+  @media (min-width: 1280px) and (max-width: 3896px) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+/* Microsoft Edge Browser 12-18 (All versions before Chromium) */
+@mixin ms-edge {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+@mixin not-ms-edge {
+  @supports not (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+// Theme Wrapping Mixin
+@mixin with-offer-type($type, $theme: 'standard') {
+  // TODO: might not need this much specificity
+  .adunit-themes.adunit-themes--#{$type} {
+    @content;
+  }
+  // .adunit-themes.adunit-themes--#{$theme} {
+  //   @content;
+  // }
+  // .adunit-themes.adunit-themes--#{$type}.adunit-themes--#{$type}-#{$theme} {
+  //   @content;
+  // }
+}

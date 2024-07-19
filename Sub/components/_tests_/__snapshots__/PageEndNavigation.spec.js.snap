@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Ui1] PageEndNavigation with 1 button matches snapshot 1`] = `
+"<div data-ui-api=\\"Ui1\\" data-ui-rendered=\\"Ui1\\" class=\\"ecom-page-navigation pEn\\"><span><span class=\\"ecom-button-wrap btn u-display-hidden\\"><button class=\\"ecom-button\\"><span><span>CONTINUE</span>
+  <ecomarrow-stub direction=\\"right\\" size=\\"lg\\" class=\\"arrow\\"></ecomarrow-stub>
+  </span></button></span></span>
+  <!---->
+  <p class=\\"legal\\">
+    NO PURCHASE OR FEE NECESSARY TO ENTER.
+    <br>A PURCHASE WON’T IMPROVE AN INDIVIDUAL’S CHANCE OF WINNING.
+  </p>
+</div>"
+`;
+
+exports[`[Ui2] PageEndNavigation with 2 buttons matches snapshot 1`] = `
+"<div data-ui-api=\\"Ui2\\" data-ui-rendered=\\"Ui2\\" class=\\"ecom-page-navigation pEn\\"><span><span class=\\"ecom-button-wrap btn u-display-hidden\\"><button class=\\"ecom-button\\"><span><span>CONTINUE SHOPPING</span>
+  <ecomarrow-stub direction=\\"right\\" size=\\"lg\\" class=\\"arrow\\"></ecomarrow-stub>
+  </span></button></span></span> <span><form method=\\"POST\\" novalidate=\\"novalidate\\" class=\\"g-w-100\\"><span class=\\"ecom-button-wrap btn u-display-hidden\\"><button class=\\"ecom-button\\"><span><span>ENTER NOW</span>
+  <ecomarrow-stub direction=\\"right\\" size=\\"lg\\" class=\\"arrow\\"></ecomarrow-stub>
+  </span></button></span></form></span>
+  <p class=\\"legal\\">
+    NO PURCHASE OR FEE NECESSARY TO ENTER.
+    <br>A PURCHASE WON’T IMPROVE AN INDIVIDUAL’S CHANCE OF WINNING.
+  </p>
+</div>"
+`;
+
+exports[`[Ui3] PageEndNavigation with 1 button which will POST matches snapshot 1`] = `
+"<div data-ui-api=\\"Ui3\\" data-ui-rendered=\\"Ui3\\" class=\\"ecom-page-navigation pEn\\"><span><form method=\\"POST\\" novalidate=\\"novalidate\\" class=\\"g-w-100\\"><span class=\\"ecom-button-wrap btn u-display-hidden\\"><button class=\\"ecom-button\\"><span><span>CONTINUE</span>
+  <ecomarrow-stub direction=\\"right\\" size=\\"lg\\" class=\\"arrow\\"></ecomarrow-stub>
+  </span></button></span></form></span>
+  <!---->
+  <p class=\\"legal\\">
+    NO PURCHASE OR FEE NECESSARY TO ENTER.
+    <br>A PURCHASE WON’T IMPROVE AN INDIVIDUAL’S CHANCE OF WINNING.
+  </p>
+</div>"
+`;
+
+exports[`PageEndNavigation matches snapshot 1`] = `
+"<div class=\\"ecom-page-navigation pEn\\"><span><span class=\\"ecom-button-wrap btn u-display-hidden\\"><button class=\\"ecom-button\\"><span><span></span>
+  <ecomarrow-stub direction=\\"right\\" size=\\"lg\\" class=\\"arrow\\"></ecomarrow-stub>
+  </span></button></span></span>
+  <!---->
+  <p class=\\"legal\\">
+    NO PURCHASE OR FEE NECESSARY TO ENTER.
+    <br>A PURCHASE WON’T IMPROVE AN INDIVIDUAL’S CHANCE OF WINNING.
+  </p>
+</div>"
+`;

@@ -1,0 +1,492 @@
+.adunit-themes {
+  /* UNIVERSAL THEME VALUES 
+    ------------------------------------------------------------------------------------------------
+  * The following values defined in this section are likely NOT to change between themes 
+  * but you can override them by including them in a themes' block if you need to.
+  */
+  --universal-font-normal: var(--app-font-normal);
+  --universal-font-bold: var(--app-font-bold);
+  --universal-font-bold-italic: var(--app-font-bold-italic);
+  --universal-font-bold-condensed: var(--app-font-bold-condensed);
+  --universal-font-italic: var(--app-font-italic);
+  --universal-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  --universal-border-radius: 2rem;
+  --universal-adunit-frame-border: 4px;
+
+  /* MARKETPLACE SPECIFIC THEME VALUES */
+  --marketplace-font-normal: var(--mp-font-normal);
+  --marketplace-font-bold: var(--mp-font-bold);
+  --marketplace-font-condensed: var(--mp-font-condensed);
+
+  /*  */
+  /*  */
+  /*  */
+  /* 
+    !! THEMES
+  */
+  /* 
+    * STANDARD DEFAULT - this is the Standard default theme for Standard Adunits.
+    ------------------------------------------------------------------------------------------------
+  */
+  &--standard {
+    --theme-color-primary: rgb(104, 120, 137);
+    --theme-color-secondary: rgb(254, 153, 0);
+    --theme-color-body: rgb(236, 236, 238);
+    --theme-color-contrast: rgb(83, 96, 110);
+    --theme-font-color-primary: rgb(255, 255, 255);
+    --theme-font-color-body: rgb(0, 0, 0);
+    --theme-font-color-body-main-savings: rgb(28, 74, 120);
+    --theme-font-color-smlt-primary: rgb(255, 255, 255);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      var(--theme-color-primary);
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(255, 255, 255);
+    --theme-background-color-feature-header: rgb(254, 153, 0);
+
+    // Content
+    --theme-font-color-content: rgb(0, 0, 0);
+    --theme-font-color-content-main-savings: rgb(28, 74, 120);
+    --theme-background-color-content: rgb(236, 236, 238);
+    --theme-background-color-readmore-button: rgb(236, 236, 238);
+    --theme-font-color-readmore-button: rgba(72, 72, 72, 0.75);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(104, 120, 137);
+    --theme-background-color-tiered-pricing: rgb(104, 120, 137);
+    --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+    --theme-background-color-part-pay-pricing: rgb(236, 236, 238);
+    --theme-font-color-part-pay-text: rgb(0, 0, 0);
+    --theme-font-color-part-pay-price: rgb(254, 153, 0);
+    --theme-background-color-button: rgb(254, 153, 0);
+    --theme-font-color-button: rgb(255, 255, 255);
+    --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+    --theme-background-color-quantity-toggle-wrap: rgb(236, 236, 238);
+    --theme-background-color-quantity-toggle: rgb(83, 96, 110);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(104, 120, 137);
+    --theme-font-color-smlt-button: rgb(72, 72, 72);
+    --theme-background-color-smlt-button: rgb(236, 236, 238);
+    --theme-font-color-title: rgb(255, 255, 255);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(255, 255, 255);
+    --theme--image-preview-border-radius: 0.75rem;
+
+    // Labels
+    --theme-background-color-deal-label: rgb(254, 153, 0);
+    --theme-font-color-deal-label: rgb(255, 255, 255);
+    --theme-background-color-secondary-label: rgb(104, 120, 137);
+    --theme-font-color-secondary-label: rgb(255, 255, 255);
+  }
+  &--marketplace-standard {
+    --theme-color-primary: rgb(150, 21, 20);
+    --theme-color-secondary:rgb(253, 5, 20);
+    --theme-color-body:rgb(255, 255, 255);
+    --theme-color-contrast: rgb(255, 181, 0);
+    --theme-font-color-primary: rgb(255, 255, 255);
+    --theme-font-color-body: rgb(0, 0, 0);
+    --theme-font-color-body-main-savings: rgb(28, 74, 120);
+    --theme-font-color-smlt-primary: rgb(255, 255, 255);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      white;
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(255, 255, 255);
+    --theme-background-color-feature-header: rgb(254, 153, 0);
+
+    // Content
+    --theme-font-color-content: rgb(0, 0, 0);
+    --theme-font-color-content-main-savings: var(--theme-color-secondary);
+    --theme-background-color-content: var(--theme-color-body);
+    --theme-background-color-readmore-button: var(--theme-color-body);
+    --theme-font-color-readmore-button: rgba(72, 72, 72, 0.75);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(104, 120, 137);
+    --theme-background-color-tiered-pricing: var(--theme-color-primary);
+    --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+    --theme-background-color-part-pay-pricing: var(--theme-color-primary);
+    --theme-font-color-part-pay-text: rgb(0, 0, 0);
+    --theme-font-color-part-pay-price: var(--theme-font-color-primary);
+    --theme-background-color-button: var(--theme-color-secondary);
+    --theme-font-color-button: rgb(255, 255, 255);
+    --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+    --theme-background-color-quantity-toggle-wrap: var(--theme-color-primary);
+    --theme-background-color-quantity-toggle: rgb(107, 23, 22);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(104, 120, 137);
+    --theme-font-color-smlt-button: rgb(72, 72, 72);
+    --theme-background-color-smlt-button: rgb(236, 236, 238);
+    --theme-font-color-title: rgb(255, 255, 255);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(255, 255, 255);
+    --theme--image-preview-border-radius: 0.75rem;
+
+    // Labels
+    --theme-background-color-deal-label: rgb(255, 181, 0);
+    --theme-font-color-deal-label: rgb(255, 255, 255);
+    --theme-background-color-secondary-label: rgb(253, 5, 20);
+    --theme-font-color-secondary-label: rgb(255, 255, 255);
+  }
+
+  /* 
+    * AUTOSHIP THEME
+    ------------------------------------------------------------------------------------------------
+  */
+
+  &--autoship {
+  --theme-color-primary: #2158A8;
+  --theme-color-secondary: #E01116;
+  --theme-color-body: rgb(255, 255, 255);
+  --theme-color-contrast: rgb(255, 0, 0);
+  --theme-font-color-primary: rgb(255, 255, 255);
+  --theme-font-color-body: rgb(0, 0, 0);
+  --theme-font-color-body-main-savings: rgb(54, 64, 148);
+  --theme-font-color-smlt-primary: rgb(255, 255, 255);
+  --theme-border-primary: var(--universal-adunit-frame-border) solid var(--theme-color-primary);
+  --theme-font-family: "Roboto";
+  --theme-font-color-feature-header: rgb(255, 255, 255);
+  --theme-background-color-feature-header: rgb(254, 153, 0);
+  --theme-font-color-content: rgb(0, 0, 0);
+  --theme-font-color-savings: rgb(54, 64, 148);
+  --theme-background-color-content: rgb(236, 236, 238);
+  --theme-background-color-readmore-button: rgb(255, 255, 255);
+  --theme-font-color-readmore-button: rgb(153, 153, 153, .75);
+  --theme-border-pricing: var(--universal-adunit-frame-border) solid var(--theme-color-contrast);
+  --theme-background-color-tiered-pricing: var(--theme-color-primary);
+  --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+  --theme-background-color-part-pay-pricing: rgb(3, 50, 84);
+  --theme-font-family-pricing: "Helvetica Neue";
+  --theme-font-color-part-pay-text: rgb(255, 255, 255);
+  --theme-font-color-part-pay-price: rgb(255, 255, 255);
+  --theme-background-color-button: var(--theme-color-secondary);
+  --theme-font-color-button: rgb(255, 255, 255);
+  --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+  --theme-background-color-quantity-toggle-wrap: var(--theme-color-primary);
+  --theme-background-color-quantity-toggle: #044c99;
+  --theme-background-color-smlt-tray: rgb(3, 50, 84);
+  --theme-font-color-smlt-button: rgb(3, 50, 84);
+  --theme-background-color-smlt-button: rgb(255, 255, 255);
+  --theme-font-color-title: rgb(255, 255, 255);
+  --theme-font-color-image-count: rgb(255, 255, 255);
+  --theme--image-preview-border-radius: .07rem;
+  --theme-background-color-deal-label: rgb(255, 179, 0);
+  --theme-font-color-deal-label: rgb(255, 255, 255);
+  --theme-background-color-secondary-label: var(--theme-color-secondary);
+  --theme-font-color-secondary-label: rgb(255, 255, 255);
+}
+
+  /* 
+    * NEON MODE - neon dark mode theme
+    ------------------------------------------------------------------------------------------------
+  */
+  &--neondark {
+    --theme-color-primary: rgb(49, 49, 49);
+    --theme-color-secondary: rgb(128, 255, 145);
+    --theme-color-contrast: rgb(76, 102, 128);
+    --theme-color-body: rgb(30, 30, 30);
+    --theme-font-color-body: rgb(255, 255, 255);
+    --theme-font-color-body-main-savings: rgb(128, 255, 145);
+    --theme-font-color-primary: rgb(255, 255, 255);
+    --theme-font-color-smlt-primary: rgb(255, 255, 255);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      rgb(49, 49, 49);
+    --universal-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); /* override universal val on theme */
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(255, 255, 255);
+    --theme-background-color-feature-header: rgb(49, 49, 49);
+
+    // Content
+    --theme-font-color-content: rgb(255, 255, 255);
+    --theme-font-color-content-main-savings: rgb(128, 255, 145);
+    --theme-background-color-content: rgb(30, 30, 30);
+    --theme-background-color-readmore-button: rgb(30, 30, 30);
+    --theme-font-color-readmore-button: rgb(255, 255, 255);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(49, 49, 49);
+    --theme-background-color-tiered-pricing: rgb(49, 49, 49);
+    --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+    --theme-background-color-part-pay-pricing: rgb(30, 30, 30);
+    --theme-font-color-part-pay-text: rgb(255, 255, 255);
+    --theme-font-color-part-pay-price: rgb(128, 255, 145);
+    --theme-background-color-button: rgb(128, 255, 145);
+    --theme-font-color-button: rgb(30, 30, 30);
+    --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+    --theme-background-color-quantity-toggle: rgb(76, 102, 128);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(49, 49, 49);
+    --theme-font-color-smlt-button: rgb(255, 255, 255);
+    --theme-background-color-smlt-button: rgb(30, 30, 30);
+    --theme-font-color-title: rgb(255, 255, 255);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(255, 255, 255);
+  }
+
+  /* 
+    * KEYLIME - theme
+    ------------------------------------------------------------------------------------------------
+  */
+  &--keylime {
+    --theme-color-primary: rgb(19, 197, 124);
+    --theme-color-secondary: rgb(255, 106, 44);
+    --theme-color-contrast: rgb(56, 146, 95);
+    --theme-color-body: rgb(242, 242, 242);
+    --theme-font-color-body: rgb(90, 90, 90);
+    --theme-font-color-body-main-savings: rgb(207, 31, 16);
+    --theme-font-color-primary: rgb(255, 255, 255);
+    --theme-font-color-smlt-primary: rgb(90, 90, 90);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      rgb(19, 197, 124);
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(255, 255, 255);
+    --theme-background-color-feature-header: rgb(19, 197, 124);
+
+    // Content
+    --theme-font-color-content: rgb(90, 90, 90);
+    --theme-font-color-content-main-savings: rgb(255, 106, 44);
+    --theme-background-color-content: rgb(242, 242, 242);
+    --theme-background-color-readmore-button: rgb(242, 242, 242);
+    --theme-font-color-readmore-button: rgb(90, 90, 90);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(19, 197, 124);
+    --theme-background-color-tiered-pricing: rgb(19, 197, 124);
+    --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+    --theme-background-color-part-pay-pricing: rgb(242, 242, 242);
+    --theme-font-color-part-pay-text: rgb(0, 0, 0);
+    --theme-font-color-part-pay-price: rgb(255, 106, 44);
+    --theme-background-color-button: rgb(255, 106, 44);
+    --theme-font-color-button: rgb(255, 255, 255);
+    --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+    --theme-background-color-quantity-toggle: rgb(56, 146, 95);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(19, 197, 124);
+    --theme-font-color-smlt-button: rgb(90, 90, 90);
+    --theme-background-color-smlt-button: rgb(242, 242, 242);
+    --theme-font-color-title: rgb(90, 90, 90);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(255, 255, 255);
+  }
+
+  /* 
+    * Neon - theme
+    ------------------------------------------------------------------------------------------------
+  */
+  &--neon {
+    --theme-color-primary: rgb(221, 255, 152);
+    --theme-color-secondary: rgb(36, 176, 106);
+    --theme-color-body: rgb(236, 236, 236);
+    --theme-color-contrast: rgba(26, 164, 142, 0.37);
+    --theme-font-color-primary: rgb(11, 77, 67);
+    --theme-font-color-smlt-primary: rgb(2, 69, 59);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      rgb(223, 255, 157);
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(11, 77, 67);
+    --theme-background-color-feature-header: rgb(221, 255, 152);
+
+    // Content
+    --theme-font-color-content: rgb(0, 0, 0);
+    --theme-font-color-content-main-savings: rgb(28, 74, 120);
+    --theme-background-color-content: rgb(236, 236, 238);
+    --theme-background-color-readmore-button: rgb(236, 236, 238);
+    --theme-font-color-readmore-button: rgb(0, 0, 0);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(221, 255, 152);
+    --theme-background-color-tiered-pricing: rgb(221, 255, 152);
+    --theme-font-color-tiered-pricing: rgb(11, 77, 67);
+    --theme-background-color-part-pay-pricing: rgb(236, 236, 236);
+    --theme-font-color-part-pay-text: rgb(0, 0, 0);
+    --theme-font-color-part-pay-price: rgb(36, 176, 106);
+    --theme-background-color-button: rgb(36, 176, 106);
+    --theme-font-color-button: rgb(236, 236, 236);
+    --theme-font-color-quantity-toggle: rgb(11, 77, 67);
+    --theme-background-color-quantity-toggle: rgba(26, 164, 142, 0.37);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(221, 255, 152);
+    --theme-font-color-smlt-button: rgb(2, 69, 59);
+    --theme-background-color-smlt-button: rgb(236, 236, 236);
+    --theme-font-color-title: rgb(2, 69, 59);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(255, 255, 255);
+  }
+
+  /* 
+    * Purple Potato - theme
+    ------------------------------------------------------------------------------------------------
+  */
+  &--purplepotato {
+    --theme-color-primary: rgb(253 121 14);
+    --theme-color-secondary: rgb(255 255 255);
+    --theme-color-body: rgb(27 10 41);
+    --theme-color-contrast: rgb(169 112 25);
+    --theme-font-color-primary: rgb(255, 255, 255);
+    --theme-font-color-smlt-primary: rgb(255, 255, 255);
+    --theme-border-primary: var(--universal-adunit-frame-border) solid
+      rgb(49, 49, 49);
+
+    // Feature Header
+    --theme-font-color-feature-header: rgb(255, 255, 255);
+    --theme-background-color-feature-header: rgb(49, 49, 49);
+
+    // Content
+    --theme-font-color-content: rgb(255, 255, 255);
+    --theme-font-color-content-main-savings: rgb(237 215 255);
+    --theme-background-color-content: rgb(26 13 37);
+    --theme-background-color-readmore-button: rgb(27 10 41);
+    --theme-font-color-readmore-button: rgb(255, 255, 255);
+
+    // Pricing
+    --theme-border-pricing: var(--universal-adunit-frame-border) solid
+      rgb(49, 49, 49);
+    --theme-background-color-tiered-pricing: rgb(49 39 58);
+    --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+    --theme-background-color-part-pay-pricing: rgb(26 13 37);
+    --theme-font-color-part-pay-text: rgb(255, 255, 255);
+    --theme-font-color-part-pay-price: rgb(228 218 216);
+    --theme-background-color-button: rgb(253 121 14);
+    --theme-font-color-button: rgb(255 255 255);
+    --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+    --theme-background-color-quantity-toggle: rgb(26 14 36);
+
+    // See More Like This
+    --theme-background-color-smlt-tray: rgb(49 49 49);
+    --theme-font-color-smlt-button: rgb(170 170 170);
+    --theme-background-color-smlt-button: rgb(30, 30, 30);
+    --theme-font-color-title: rgb(111 111 111);
+
+    // Image Preview
+    --theme-font-color-image-count: rgb(240 240 240);
+  }
+
+  // /*
+  //   * Father's Day - theme
+  //   ------------------------------------------------------------------------------------------------
+  // */
+  // &--fathers-day {
+  //   --theme-color-primary: rgb(3, 50, 84);
+  //   --theme-color-secondary: rgb(255, 179, 0);
+  //   --theme-color-body: rgb(255, 255, 255);
+  //   --theme-color-contrast: rgb(255, 0, 0);
+  //   --theme-font-color-primary: rgb(255, 255, 255);
+  //   --theme-font-color-body: rgb(0, 0, 0);
+  //   --theme-font-color-body-main-savings: rgb(54, 64, 148);
+  //   --theme-font-color-smlt-primary: rgb(255, 255, 255);
+  //   --theme-border-primary: var(--universal-adunit-frame-border) solid var(--theme-color-primary);
+
+  //   // Feature Header
+  //   --theme-font-color-feature-header: rgb(255, 255, 255);
+  //   --theme-background-color-feature-header: rgb(254, 153, 0);
+
+  //   // Content
+  //   --theme-font-family: 'Roboto';
+  //   --theme-font-color-content: rgb(0, 0, 0);
+  //   --theme-font-color-savings: rgb(54, 64, 148);
+  //   --theme-background-color-content: rgb(236, 236, 238);
+  //   --theme-background-color-readmore-button: rgb(255, 255, 255);
+  //   --theme-font-color-readmore-button: rgb(153, 153, 153, .75);
+
+  //   // Pricing
+  //   --theme-border-pricing: var(--universal-adunit-frame-border) solid var(--theme-color-contrast);
+  //   --theme-background-color-tiered-pricing: rgb(3, 50, 84);
+  //   --theme-font-color-tiered-pricing: rgb(255, 255, 255);
+  //   --theme-background-color-part-pay-pricing: rgb(3, 50, 84);
+  //   --theme-font-color-part-pay-text: rgb(255, 255, 255);
+  //   --theme-font-color-part-pay-price: rgb(255, 255, 255);
+  //   --theme-background-color-button: rgb(254, 0, 0);
+  //   --theme-font-color-button: rgb(255, 255, 255);
+  //   --theme-font-color-quantity-toggle: rgb(255, 255, 255);
+  //   --theme-background-color-quantity-toggle-wrap: rgb(255, 255, 255);
+  //   --theme-background-color-quantity-toggle:  rgb(3, 50, 84);
+
+  //   // See More Like This
+  //   --theme-background-color-smlt-tray: rgb(3, 50, 84);
+  //   --theme-font-color-smlt-button: rgb(3, 50, 84);
+  //   --theme-background-color-smlt-button: rgb(255, 255, 255);
+  //   --theme-font-color-title: rgb(255, 255, 255);
+
+  //   // Image Preview
+  //   --theme-font-color-image-count: rgb(255, 255, 255);
+  //   --theme--image-preview-border-radius: .07rem;
+
+  //   // Labels
+  //   --theme-background-color-deal-label: rgb(255, 179, 0);
+  //   --theme-font-color-deal-label: rgb(255, 255, 255);
+  //   --theme-background-color-secondary-label: rgb(1, 48, 82);
+  //   --theme-font-color-secondary-label: rgb(255, 255, 255);
+  // }
+  /*  */
+  /*  */
+  /*  */
+  /* Specific Component Variables
+     !! WARNING - Do not edit past this line unless you follow these rules
+      !! 1. all right-side values must be VARS
+      !! 2. all VARS must of be of namespace --theme or --universal
+      !! 3. specific component vars must always end in number
+    ------------------------------------------------------------------------------------------------
+  */
+  /* fonts */
+  --adunit-font-1: var(--universal-font-normal);
+  --adunit-font-2: var(--universal-font-bold);
+  --adunit-font-3: var(--universal-font-bold-italic);
+  --adunit-font-4: var(--universal-font-italic);
+  --adunit-font-5: var(--universal-font-bold-condensed);
+
+  /* colors */
+  --adunit-color-1: var(--theme-color-primary);
+  --adunit-color-2: var(--theme-color-secondary);
+  --adunit-color-3: var(--theme-color-contrast);
+  --adunit-color-4: var(--theme-font-color-primary);
+  --adunit-color-5: var(--theme-color-body);
+  --adunit-color-6: var(--theme-font-color-body);
+  --adunit-color-7: var(--theme-font-color-body-main-savings);
+  --adunit-color-8: var(--theme-font-color-smlt-primary);
+  --adunit-color-9: var(--theme-font-color-feature-header);
+  --adunit-color-10: var(--theme-background-color-feature-header);
+  --adunit-color-11: var(--theme-font-color-content);
+  --adunit-color-12: var(--theme-font-color-content-main-savings);
+  --adunit-color-13: var(--theme-background-color-content);
+  --adunit-color-14: var(--theme-background-color-tiered-pricing);
+  --adunit-color-15: var(--theme-font-color-tiered-pricing);
+  --adunit-color-16: var(--theme-background-color-part-pay-pricing);
+  --adunit-color-17: var(--theme-font-color-part-pay-text);
+  --adunit-color-18: var(--theme-font-color-part-pay-price);
+  --adunit-color-19: var(--theme-background-color-button);
+  --adunit-color-20: var(--theme-font-color-button);
+  --adunit-color-21: var(--theme-font-color-quantity-toggle);
+  --adunit-color-22: var(--theme-background-color-quantity-toggle);
+  --adunit-color-23: var(--theme-background-color-smlt-tray);
+  --adunit-color-24: var(--theme-font-color-smlt-button);
+  --adunit-color-25: var(--theme-background-color-smlt-button);
+  --adunit-color-26: var(--theme-font-color-title);
+  --adunit-color-27: var(--theme-background-color-readmore-button);
+  --adunit-color-28: var(--theme-font-color-readmore-button);
+  --adunit-color-29: var(--theme-font-color-image-count);
+
+  /* css properties - filters/effects/etc */
+  --adunit-css-1: var(--theme-border-primary);
+  --adunit-css-2: var(--universal-box-shadow);
+  --adunit-css-3: var(--universal-border-radius);
+  --adunit-css-4: var(--universal-adunit-frame-border);
+  --adunit-css-5: var(--theme-border-pricing);
+}

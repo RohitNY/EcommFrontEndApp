@@ -1,0 +1,212 @@
+/**
+* This file is ONLY for global utility classes
+- For all "global" utility classes, use "g-" as the class prefix. 
+- for example: "g-start-hidden"
+*/
+
+// this class is required for ui animations directive
+.g-display-hidden {
+  opacity: 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* 
+utilities classes 
+----------------------------------------------------------------------------------------------------
+*/
+.g-strike-through {
+  text-decoration: line-through;
+}
+.g-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.g-line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* !!! 
+margin-bottom 
+*/
+.g-mb-1 {
+  margin-bottom: 1rem;
+}
+
+.g-mb-1p5 {
+  margin-bottom: 1.5rem;
+}
+
+.g-mb-2 {
+  margin-bottom: 2rem;
+}
+
+.g-mb-2p5 {
+  margin-bottom: 2.5rem;
+}
+
+.g-mb-3 {
+  margin-bottom: 3rem;
+}
+
+.g-mb-3p5 {
+  margin-bottom: 3.5rem;
+}
+
+.g-mb-4 {
+  margin-bottom: 4rem;
+}
+
+/* !!! 
+width 
+*/
+.g-w-100 {
+  width: 100%;
+}
+.g-w-95 {
+  width: 95%;
+}
+.g-w-90 {
+  width: 90%;
+}
+
+/* !!! 
+max-width 
+*/
+.g-mw-100 {
+  max-width: 100%;
+}
+.g-mw-95 {
+  max-width: 95%;
+}
+.g-mw-90 {
+  max-width: 90%;
+}
+
+/* !!! 
+font-weight
+*/
+.g-fw-700 {
+  font-weight: 700;
+}
+.g-fw-800 {
+  font-weight: 800;
+}
+.g-fw-900 {
+  font-weight: 900;
+}
+
+/* !!! 
+font-sizes
+*/
+.g-fs-1 {
+  font-size: 1rem;
+}
+.g-fs-1p5 {
+  font-size: 1.5rem;
+}
+.g-fs-2 {
+  font-size: 2rem;
+}
+.g-fs-2p5 {
+  font-size: 2.5rem;
+}
+.g-fs-3 {
+  font-size: 3rem;
+}
+.g-fs-3p5 {
+  font-size: 3.5rem;
+}
+.g-fs-4 {
+  font-size: 4rem;
+}
+.g-fs-4p5 {
+  font-size: 4.5rem;
+}
+
+/* !!! 
+flex-box
+*/
+.g-flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.g-flex-justify-center {
+  justify-content: center;
+}
+.g-flex-justify-space-around {
+  justify-content: space-around;
+}
+.g-flex-align-center {
+  align-content: center;
+}
+
+/* !!! 
+filter blur
+*/
+.g-filter-blur {
+  filter: blur(3.337px);
+}
+.g-no-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  // transition: all .2s ease-in-out;
+}
+
+/* !!! 
+opacity dim
+*/
+.g-dim-90 {
+  opacity: .9;
+}
+.g-dim-80 {
+  opacity: .8;
+}
+.g-dim-70 {
+  opacity: .7;
+}
+.g-dim-60 {
+  opacity: .6;
+}
+.g-dim-50 {
+  opacity: .5;
+}
+
+/* !!! 
+bg color
+*/
+.g-bg-white {
+  background-color: #ffffff;
+}
+
+/* !!! 
+padding
+*/
+.g-pad-p5 {
+  padding: .5rem;
+}
+.g-pad-1 {
+  padding: 1rem;
+}
+.g-pad-1p5 {
+  padding: 1.5rem;
+}
+
+/* !!! 
+border-radius
+*/
+.g-br-p5 {
+  border-radius: .5rem;
+}
+.g-br-1 {
+  border-radius: 1rem;
+}
+.g-br-1p5 {
+  border-radius: 1.5rem;
+}

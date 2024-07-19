@@ -1,0 +1,34 @@
+/**
+* This file is ONLY for vue/nuxt page amd component shared transitions
+*/
+
+/* slide page left/right transitions */
+.transitions-slide-left-enter,
+.transitions-slide-right-leave-active {
+  opacity: 0;
+  transform: translateZ(0) translate(100%, 0);
+}
+.transitions-slide-left-leave-active,
+.transitions-slide-right-enter {
+  opacity: 0;
+  transform: translateZ(0) translate(-100%, 0);
+}
+
+/* fade transitions */
+.transitions-fade-enter-active,
+.transitions-fade-leave-active {
+  transition: opacity .5s;
+}
+.transitions-fade-enter,
+.transitions-fade-leave-to {
+  opacity: 0;
+}
+
+.transitions-fade-fast-enter-active,
+.transitions-fade-fast-leave-active {
+  transition: opacity .17s;
+}
+.transitions-fade-fast-enter,
+.transitions-fade-fast-leave-to {
+  opacity: 0;
+}

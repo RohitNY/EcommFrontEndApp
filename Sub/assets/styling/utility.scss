@@ -1,0 +1,13 @@
+/**
+* This file is ONLY for global utility classes
+- For all "global" utility classes, use "u-" as the class prefix. 
+- for example: "u-hidden"
+*/
+
+// this class is required as a ui directive helper
+// do not rename or change this class
+.u-display-hidden {
+  opacity: 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+}

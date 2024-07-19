@@ -1,0 +1,50 @@
+{
+  "name": "pch-shopping",
+  "version": "1.0.0",
+  "description": "The new 2020 PCH Shopping Experience: PCH ShopX",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest",
+    "ci": "powershell -file build.ps1",
+    "ci-mac": "pwsh -file build.ps1"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "intersection-observer": "^0.7.0",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.14.7",
+    "nuxt-polyfill": "^1.0.3",
+    "swiper": "^5.4.5",
+    "vue": "^2.6.12",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-ripple-directive": "^2.0.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.2.0",
+    "@nuxtjs/global-components": "^0.6.1",
+    "@nuxtjs/stylelint-module": "^3.2.2",
+    "@vue/test-utils": "^1.0.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^24.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "jest": "^24.1.0",
+    "jest-teamcity": "^1.8.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "sinon": "^9.0.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "vue-jest": "^4.0.0-beta.5"
+  }
+}

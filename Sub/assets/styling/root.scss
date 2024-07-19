@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Futura pt';
+  src: url('https://use.typekit.net/af/648f69/000000000000000000010098/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/648f69/000000000000000000010098/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/648f69/000000000000000000010098/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('opentype');
+  font-display: auto;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Text Pro 55 Roman';
+  src: url('https://use.typekit.net/af/1285d2/00000000000000003b9b2050/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/1285d2/00000000000000003b9b2050/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/1285d2/00000000000000003b9b2050/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Text Pro 75 Bold';
+  src: url('https://use.typekit.net/af/abbb5b/00000000000000003b9b2054/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/abbb5b/00000000000000003b9b2054/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/abbb5b/00000000000000003b9b2054/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+      format('opentype');
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Text Pro 75 Bold Italic';
+  src: url('https://use.typekit.net/af/73eec9/00000000000000003b9b2055/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/73eec9/00000000000000003b9b2055/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/73eec9/00000000000000003b9b2055/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+      format('opentype');
+  font-display: auto;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url('~assets/fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('~assets/fonts/RobotoCondensed-Bold.woff') format('woff'),
+    url('~assets/fonts/RobotoCondensed-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('~assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  src: url('~assets/fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* fonts */
+  --app-font-normal: 'Neue Haas Grotesk Text Pro 55 Roman', sans-serif;
+  --app-font-bold: 'Neue Haas Grotesk Text Pro 75 Bold', sans-serif;
+  --app-font-bold-italic: 'Neue Haas Grotesk Text Pro 75 Bold Italic',
+    sans-serif;
+  --app-font-bold-condensed: 'Roboto Condensed Bold', sans-serif;
+  --app-font-italic: 'Futura pt', sans-serif;
+
+  /* marketplace fonts */
+  --mp-font-normal: 'Roboto', sans-serif;
+  --mp-font-bold: 'Roboto Black', sans-serif;
+  --mp-font-condensed: 'Roboto Condensed', sans-serif;
+
+  /* colors */
+  --app-color-white: rgb(255, 255, 255);
+  --app-color-orange: rgb(254, 153, 0);
+}
